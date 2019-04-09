@@ -1,0 +1,31 @@
+</head>
+<body>
+	// <script type="text/javascript">
+
+		//找出1~10000以内所有完全数
+		// 	for(var j=1;j<=10000;j++){
+		// 		if(sumofprime(j)==j){
+		// 			console.log(j);
+		// 		}
+		// 	}
+
+		//输入一个数判断是否为完全数
+		var a=parseInt(prompt("请输入一个数"));
+		if(sumofprime(a)==a){
+			alert("这个数是完全数");
+		}else{
+			alert("这个数不是完全数");
+		}
+		//输入一个数 返回除了它自己的其它约数和
+		function sumofprime(num){
+			var sum=0;
+			for(var i=1;i<num;i++){
+				if(num%i==0){
+					sum=sum+i;
+				}
+			}
+			return sum;
+		}
+	</script>
+</body>
+</html>
