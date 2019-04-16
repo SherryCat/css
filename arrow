@@ -1,0 +1,20 @@
+<script>
+            var slide=document.getElementById("slide"); //轮播图的盒子
+            var arr=document.getElementById("arr");  //两个三角
+            slide.onmouseover=function () {
+                arr.style.display="block"; //显示三角
+            }
+            slide.onmouseout=function(){
+                arr.style.display="none";
+            }
+            var li01=document.getElementById("li01");
+            var li02=document.getElementById("li02");
+            var pic=document.getElementById("pic");
+            li02.onmouseover=function(){
+                pic.src="images/22.jpg";
+                li02.className="current";
+            }
+            li01.onmouseover=function(){
+                pic.src="images/11.jpg";
+            }
+        </script>
